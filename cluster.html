@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Covid-19</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col xl2 l2 m3 s5">
+                        <div class="logo" id="home">
+
+                            <!-- <a href="#!"><img src="img/logo.png" src="{{url_for('static', filename='images/logo.png')}}" alt=""></a> -->
+                            <a href="index.html"><img src="images/logo.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col xl10 l10 10 m9 s7">
+                        <div class="mainmenu">
+                            <ul>
+                                <!-- <li><a class="active" href="#!"><i class="fa fa-home"></i></a></li> -->
+                                <li><a class="active" href="cluster.html">Cluster</a></li>
+                                <!-- <li><a class="" href="#symtompt">Symtompt</a></li>
+                           <li><a class="" href="#prevention">Prevention</a></li>
+                           <li><a class="" href="#contact">Contact</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="mobilemenu">
+                            <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776;</span>
+                            <div id="mySidenav" class="sidemenu">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <ul>
+                                    <!-- <li><a href="#!"><i class="fa fa-home"></i></a></li> -->
+                                    <li><a class="active" href="cluster.html">Cluster</a></li>
+                                    <!-- <li><a href="#!">Symtompt</a></li>
+                                <li><a href="#!">Prevention</a></li>
+                                <li><a href="#!">Contact</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="hasil" style="text-align: center;">
+           <a style="background-color: red; color: whitesmoke; padding: 5px; border-radius: 20px;" href="#hasil-data">Hasil Cluster</a>
+           <a style="background-color: red; color: whitesmoke; padding: 5px; border-radius: 20px;" href="#hasil-elbow">Proses Klasterisasi</a>
+           <!-- <a style="background-color: red; color: whitesmoke; padding: 5px; border-radius: 20px;" href="#hasil-cluster">Klasterisasi</a> -->
+        </div>
+
+
+        <h4 style="text-align: center;">Tabel Data Pasien Covid-19 di Kab. Tangerang</h4>
+        <hr>
+        <img style="width: 95%; display: block; margin-left: auto; margin-right: auto;"
+            src="images/table_data_covid.png" alt="table data covid">
+            <hr>
+        <section style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+            <!-- <img src="data_elbow.png" alt="metode elbow"> -->
+            <!-- <img src="{{url_for('static', filename='images/table_data_covid.png')}}" alt="table data covid"> -->
+            <img id="hasil-elbow" src="images/data_elbow.png" alt="data elbow"><hr>
+            <img id="hasil-cluster" src="images/hasil_cluster.png" alt="hasil cluster"><hr>
+            <img src="images/hist_cluster.png" alt="hist cluster"><hr>
+        </section>
+        <h4 id="hasil-data" style="text-align: center;">Tabel zona Covid-19 di Kab. Tangerang</h4>
+        <div class="hasil" style="text-align: center;">
+            <a style="background-color: red; color: whitesmoke; padding: 5px; border-radius: 20px;" href="#home">Home</a>
+        </div>
+            <hr>
+        <img style="width: 95%; display: block; margin-left: auto; margin-right: auto;"
+            src="images/data_table_hasil.png" alt="table data covid">
+    </body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>

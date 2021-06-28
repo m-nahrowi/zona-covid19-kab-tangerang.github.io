@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid-19</title>
+</head>
+<body>
+   <header>
+       <div class="container">
+           <div class="row ml-auto">
+               <div class="col xl2 l2 m3 s5">
+                   <div class="logo">
+                       
+                    <!-- <a href="#!"><img src="img/logo.png" src="{{url_for('static', filename='images/logo.png')}}" alt=""></a> -->
+                       <a href="index.html"><img src="images/logo.png" alt=""></a>
+
+                   </div>
+               </div>
+               <div class="col xl10 l10 10 m9 s7">
+                   <div class="mainmenu">
+                       <ul>
+                           <!-- <li><a class="active" href="#!"><i class="fa fa-home"></i></a></li> -->
+                           <li><a class="active" href="cluster.html">Cluster</a></li>
+                           <!-- <li><a class="" href="#symtompt">Symtompt</a></li>
+                           <li><a class="" href="#prevention">Prevention</a></li>
+                           <li><a class="" href="#contact">Contact</a></li> -->
+                       </ul>
+                   </div> 
+                   <div class="mobilemenu">
+                       <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776;</span>
+                       <div id="mySidenav" class="sidemenu">
+                           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                           <ul>
+                                <!-- <li><a href="#!"><i class="fa fa-home"></i></a></li> -->
+                                <li><a class="active" href="cluster.html">Cluster</a></li>
+                                <!-- <li><a href="#!">Symtompt</a></li>
+                                <li><a href="#!">Prevention</a></li>
+                                <li><a href="#!">Contact</a></li> -->
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header> 
+   <section class="banner">
+       <div class="container">
+           <div class="banner-description">
+               <div class="banner-content">
+                   <span class="semi-title">
+                       COVID-19 alert
+                   </span>
+                   <h2>
+                       Tetap tinggal di rumah untuk stop corona virus
+                   </h2>
+                   <p>
+                       Di sana membutuhkan pelindungan dan pencegahan virus corona. setiap orang harus peduli mendukung
+                   </p>
+                   <a href="cluster.html" class="filbtn"> Hasil Cluster</a>
+               </div>
+           </div>
+       </div>
+   </section>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    function openNav(){
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav(){
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='data.js') }}"></script> -->
